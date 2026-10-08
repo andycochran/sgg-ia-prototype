@@ -1,0 +1,80 @@
+/*
+Simpler.Grants.gov Prototype Stylesheet
+This imports the base USWDS framework to ensure functionality and accessibility,
+then immediately applies customizations to match the Simpler theme and layout.
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/uswds/3.8.0/css/uswds.min.css');
+
+/* --- Simpler.Grants.gov Custom Overrides --- */
+
+/* Header Adjustments */
+.usa-header--extended {
+border-bottom: 1px solid #dfe1e2;
+}
+
+.usa-logo__text {
+font-family: 'Merriweather', 'Georgia', serif;
+color: #1a4480; /* Primary Dark Blue */
+font-size: 1.5rem;
+}
+
+.usa-nav__primary-item > .usa-nav__link {
+font-weight: 600;
+}
+
+/* Auth Navigation Styling /
+#auth-nav-node {
+margin-left: auto; / Pushes the Sign in / Account menu to the right if space allows */
+}
+#action-sign-in {
+color: #005ea2;
+}
+#action-sign-in:hover {
+text-decoration: underline;
+}
+
+/* Typography Overrides */
+h1, h2, h3, .usa-heading--xl {
+font-family: 'Merriweather', 'Georgia', serif;
+color: #112e51;
+}
+
+/* Custom 5-Column Footer Adjustments */
+.usa-footer--big .usa-footer__primary-section {
+background-color: #f0f0f0;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+.usa-footer__primary-link {
+font-size: 1.1rem;
+font-weight: 700;
+color: #112e51;
+margin-bottom: 1rem;
+}
+
+/* Identifier Overrides /
+.usa-identifier {
+background-color: #112e51; / Dark Blue Masthead /
+}
+.usa-identifier__section--masthead,
+.usa-identifier__section--required-links {
+background-color: #112e51;
+color: #ffffff;
+}
+.usa-identifier__required-link,
+.usa-identifier__identity-disclaimer a {
+color: #ffffff;
+text-decoration: underline;
+}
+.usa-identifier__required-link:hover,
+.usa-identifier__identity-disclaimer a:hover {
+color: #a9c2db;
+}
+.usa-identifier__section--usagov {
+background-color: #0b1f36; / Even darker footer bottom */
+color: #ffffff;
+}
+.usa-identifier__usagov-description, .usa-link {
+color: #ffffff;
+}
