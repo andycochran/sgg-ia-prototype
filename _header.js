@@ -64,14 +64,14 @@ class SiteHeader extends HTMLElement {
                   <span>Learn</span>
                 </button>
                 <ul id="nav-learn" class="usa-nav__submenu">
-                  <li class="usa-nav__submenu-item"><a href="grants-101.html">Grants 101</a></li>
-                  <li class="usa-nav__submenu-item"><a href="lifecycle-of-a-grant.html">Lifecycle of a grant</a></li>
-                  <li class="usa-nav__submenu-item"><a href="application-process.html">Application process</a></li>
-                  <li class="usa-nav__submenu-item"><a href="grant-policies.html">Grant policies</a></li>
-                  <li class="usa-nav__submenu-item"><a href="grant-making-agencies.html">Grant-making agencies</a></li>
-                  <li class="usa-nav__submenu-item"><a href="grant-terminology.html">Grant terminology</a></li>
-                  <li class="usa-nav__submenu-item"><a href="fraud.html">Fraud</a></li>
-                  <li class="usa-nav__submenu-item"><a href="grant-systems.html">Grant systems</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--grants-101.html">Grants 101</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--lifecycle-of-a-grant.html">Lifecycle of a grant</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--application-process.html">Application process</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--grant-policies.html">Grant policies</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--grant-making-agencies.html">Grant-making agencies</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--grant-terminology.html">Grant terminology</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--fraud.html">Fraud</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--grant-systems.html">Grant systems</a></li>
                 </ul>
               </li>
 
