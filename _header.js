@@ -123,8 +123,7 @@ class SiteHeader extends HTMLElement {
                     <a href="apply--getting-ready-to-apply.html">Getting ready to apply</a>
                   </li>
                   <li class="usa-nav__submenu-item"><a href="apply--building-your-application.html">Building your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="apply--submitting-your-application.html">Submitting your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="apply--application-checklist.html">Application checklist</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--submission-checklist.html">Submission checklist</a></li>
                   <li class="usa-nav__submenu-item"><a href="apply--application-troubleshooting.html">Application troubleshooting</a></li>
                 </ul>
               </li>
