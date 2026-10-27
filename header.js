@@ -82,28 +82,28 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-find" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="search-grants" class="display-flex flex-align-center">
+                    <a href="" data-page="search-grants" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-search"></use></svg>
                       <span>Search grants</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="saved-opportunities" data-auth-required="true" class="display-flex flex-align-center">
+                    <a href="" data-page="saved-opportunities" data-auth-required="true" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-star"></use></svg>
                       <span>Saved opportunities</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="saved-searches" data-auth-required="true" class="display-flex flex-align-center">
+                    <a href="" data-page="saved-searches" data-auth-required="true" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-star"></use></svg>
                       <span>Saved searches</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
-                    <a href="#" data-page="reviewing-the-opportunity">Reviewing the opportunity</a>
+                    <a href="" data-page="reviewing-the-opportunity">Reviewing the opportunity</a>
                   </li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="determining-eligibility">Determining eligibility</a></li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="search-tips">Search tips</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="determining-eligibility">Determining eligibility</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="search-tips">Search tips</a></li>
                 </ul>
               </li>
 
@@ -114,52 +114,52 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-apply" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="applications" data-auth-required="true" class="display-flex flex-align-center">
+                    <a href="" data-page="applications" data-auth-required="true" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
                       <span>Applications</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
-                    <a href="#" data-page="getting-ready-to-apply">Getting ready to apply</a>
+                    <a href="" data-page="getting-ready-to-apply">Getting ready to apply</a>
                   </li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="building-your-application">Building your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="submitting-your-application">Submitting your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="application-checklist">Application checklist</a></li>
-                  <li class="usa-nav__submenu-item"><a href="#" data-page="application-troubleshooting">Application troubleshooting</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="building-your-application">Building your application</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="submitting-your-application">Submitting your application</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="application-checklist">Application checklist</a></li>
+                  <li class="usa-nav__submenu-item"><a href="" data-page="application-troubleshooting">Application troubleshooting</a></li>
                 </ul>
               </li>
 
               <!-- 4. SIGN IN (UNAUTHENTICATED) -->
-              <li class="usa-nav__primary-item" id="unauth-nav-item">
-                <a href="#" id="sign-in-btn" class="usa-nav__link">Sign in</a>
+              <li class="usa-nav__primary-item anon-only" id="unauth-nav-item">
+                <a href="" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
               </li>
 
               <!-- 5. ACCOUNT MENU (AUTHENTICATED) -->
-              <li class="usa-nav__primary-item display-none" id="auth-nav-item">
+              <li class="usa-nav__primary-item auth-only" id="auth-nav-item">
                 <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-account">
                   <span>Account</span>
                 </button>
                 <ul id="nav-account" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="settings" class="display-flex flex-align-center">
+                    <a href="" data-page="settings" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-settings"></use></svg>
                       <span>Settings</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="notifications" class="display-flex flex-align-center">
+                    <a href="" data-page="notifications" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
                       <span>Notifications</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="#" data-page="organizations" class="display-flex flex-align-center">
+                    <a href="" data-page="organizations" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-groups"></use></svg>
                       <span>Organizations</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
-                    <a href="#" id="sign-out-btn">Sign out</a>
+                    <a href="" id="sign-out-btn" onclick="setAuthState(false);">Sign out</a>
                   </li>
                 </ul>
               </li>

@@ -3,7 +3,7 @@ class SiteFooter extends HTMLElement {
     this.innerHTML = `
       <!-- FOOTER -->
       <footer class="usa-footer usa-footer--big">
-        <div class="usa-footer__primary-section">
+        <div class="usa-footer__primary-section padding-y-6">
           <div class="grid-container">
             <div class="grid-row grid-gap">
               <div class="mobile-lg:grid-col-3">
