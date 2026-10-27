@@ -82,28 +82,28 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-find" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="search-grants" class="display-flex flex-align-center">
+                    <a href="find--search.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-search"></use></svg>
                       <span>Search grants</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="saved-opportunities" data-auth-required="true" class="display-flex flex-align-center">
-                      <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-star"></use></svg>
-                      <span>Saved opportunities</span>
-                    </a>
-                  </li>
-                  <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="saved-searches" data-auth-required="true" class="display-flex flex-align-center">
+                    <a href="find--saved-searches.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-star"></use></svg>
                       <span>Saved searches</span>
                     </a>
                   </li>
-                  <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
-                    <a href="" data-page="reviewing-the-opportunity">Reviewing the opportunity</a>
+                  <li class="usa-nav__submenu-item text-bold">
+                    <a href="find--saved-opportunities.html" class="display-flex flex-align-center">
+                      <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-star"></use></svg>
+                      <span>Saved opportunities</span>
+                    </a>
                   </li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="determining-eligibility">Determining eligibility</a></li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="search-tips">Search tips</a></li>
+                  <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
+                    <a href="find--reviewing-the-opportunity.html">Reviewing the opportunity</a>
+                  </li>
+                  <li class="usa-nav__submenu-item"><a href="find--determining-eligibility.html">Determining eligibility</a></li>
+                  <li class="usa-nav__submenu-item"><a href="find--search-tips.html">Search tips</a></li>
                 </ul>
               </li>
 
@@ -114,18 +114,18 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-apply" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="applications" data-auth-required="true" class="display-flex flex-align-center">
+                    <a href="apply--applications.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
                       <span>Applications</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
-                    <a href="" data-page="getting-ready-to-apply">Getting ready to apply</a>
+                    <a href="apply--getting-ready-to-apply.html">Getting ready to apply</a>
                   </li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="building-your-application">Building your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="submitting-your-application">Submitting your application</a></li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="application-checklist">Application checklist</a></li>
-                  <li class="usa-nav__submenu-item"><a href="" data-page="application-troubleshooting">Application troubleshooting</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--building-your-application.html">Building your application</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--submitting-your-application.html">Submitting your application</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--application-checklist.html">Application checklist</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--application-troubleshooting.html">Application troubleshooting</a></li>
                 </ul>
               </li>
 
@@ -141,19 +141,19 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-account" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="settings" class="display-flex flex-align-center">
+                    <a href="account--settings.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-settings"></use></svg>
                       <span>Settings</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="notifications" class="display-flex flex-align-center">
+                    <a href="account--notifications.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
                       <span>Notifications</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="" data-page="organizations" class="display-flex flex-align-center">
+                    <a href="account--organizations.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-groups"></use></svg>
                       <span>Organizations</span>
                     </a>

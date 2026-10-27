@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simpler.Grants.gov - IA Usability Prototype</title>
+  
+  <!-- Relative link to minified styles -->
+  <link rel="stylesheet" href="_styles.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.8.0/js/uswds-init.min.js"></script>
+  <script src="_header.js" defer></script>
+  <script src="_auth.js" defer></script>
+  <script src="_footer.js" defer></script>
+</head>
+<body>
+
+  <site-header></site-header>
+
+  <main id="main-content">
+    <div class="grid-container">
+
+      <div class="usa-prose padding-y-6">
+        <h1>Search Grants</h1>
+        <div class="usa-search usa-search--big" role="search">
+          <input class="usa-input maxw-none" id="query" type="search" name="query" value="">
+          <button class="usa-button" type="submit"><span class="usa-search__submit-text">Search</span></button>
+        </div>
+        <h2>Search results (this page is non-functional)</h2>
+        <p>This static prototype does not actually let you search for grants.</p>
+        <p>This page simply shows where the complex searching interface would be.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+
+  <!-- USWDS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.8.0/js/uswds.min.js"></script>
+
+  </body>
+</html>

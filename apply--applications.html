@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simpler.Grants.gov - IA Usability Prototype</title>
+  
+  <!-- Relative link to minified styles -->
+  <link rel="stylesheet" href="_styles.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.8.0/js/uswds-init.min.js"></script>
+  <script src="_header.js" defer></script>
+  <script src="_auth.js" defer></script>
+  <script src="_footer.js" defer></script>
+</head>
+<body>
+
+  <site-header></site-header>
+
+  <main id="main-content">
+    <div class="grid-container">
+
+      <div class="usa-prose padding-y-6">
+        <h1>Applications</h1>
+
+        <div class="anon-only">
+          <p>This content appears when the user is not signed in.</p>
+          <p>Prompt to <button class="usa-button--unstyled" onclick="setAuthState(true);">sign in</button>.</p>
+        </div>
+
+        <div class="auth-only">
+          <p>When the user is authenticated, they'll see a functional list of their applications.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+
+  <!-- USWDS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.8.0/js/uswds.min.js"></script>
+
+  </body>
+</html>
