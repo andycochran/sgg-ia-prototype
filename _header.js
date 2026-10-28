@@ -21,6 +21,9 @@ class SiteHeader extends HTMLElement {
         <symbol id="icon-groups" viewBox="0 0 24 24">
           <path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
         </symbol>
+        <symbol id="icon-account-circle" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </symbol>
       </svg>
 
       <!-- USWDS BANNER -->
@@ -141,6 +144,12 @@ class SiteHeader extends HTMLElement {
                 <ul id="nav-account" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
                     <a href="account--settings.html" class="display-flex flex-align-center">
+                      <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-account-circle"></use></svg>
+                      <span>Dashbaord</span>
+                    </a>
+                  </li>
+                  <li class="usa-nav__submenu-item text-bold">
+                    <a href="account--settings.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-settings"></use></svg>
                       <span>Settings</span>
                     </a>
@@ -158,6 +167,11 @@ class SiteHeader extends HTMLElement {
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item border-top-1px border-base-lighter margin-top-1 padding-top-1">
+                    <span class="display-block padding-2 padding-bottom-0">
+                      <span class="text-base-lighter font-sans-3xs">user@email.com</span>
+                    </span>
+                  </li>
+                  <li class="usa-nav__submenu-item">
                     <a href="" id="sign-out-btn" onclick="setAuthState(false);">Sign out</a>
                   </li>
                 </ul>
