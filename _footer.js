@@ -7,57 +7,49 @@ class SiteFooter extends HTMLElement {
           <div class="grid-container">
             <div class="grid-row grid-gap">
               <div class="mobile-lg:grid-col-3">
-                <div class="usa-footer__primary-container">
-                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
-                    <h4 class="usa-footer__primary-link">Support</h4>
-                    <ul class="usa-list usa-list--unstyled">
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="applicant-help">Applicant help</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="forms-library">Forms library</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="grantor-resources">Grantor resources</a></li>
-                    </ul>
-                  </section>
-                </div>
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Support</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="applicant-help">Applicant help</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="forms-library">Forms library</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="grantor-resources">Grantor resources</a></li>
+                  </ul>
+                </section>
               </div>
               <div class="mobile-lg:grid-col-3">
-                <div class="usa-footer__primary-container">
-                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
-                    <h4 class="usa-footer__primary-link">About</h4>
-                    <ul class="usa-list usa-list--unstyled">
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="newsletter">Newsletter</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="events">Events</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="privacy">Privacy</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="disclaimers">Disclaimers</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="blog">Blog</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="social-media">Social media</a></li>
-                    </ul>
-                  </section>
-                </div>
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">About</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="newsletter">Newsletter</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="events">Events</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="privacy">Privacy</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="disclaimers">Disclaimers</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="blog">Blog</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="social-media">Social media</a></li>
+                  </ul>
+                </section>
               </div>
               <div class="mobile-lg:grid-col-3">
-                <div class="usa-footer__primary-container">
-                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
-                    <h4 class="usa-footer__primary-link">Website updates</h4>
-                    <ul class="usa-list usa-list--unstyled">
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="what-were-building-next">What we're building next</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="release-notes">Release notes</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="public-wiki">Public wiki</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="discussion-forum">Discussion forum</a></li>
-                    </ul>
-                  </section>
-                </div>
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Website updates</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="what-were-building-next">What we're building next</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="release-notes">Release notes</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="public-wiki">Public wiki</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="discussion-forum">Discussion forum</a></li>
+                  </ul>
+                </section>
               </div>
               <div class="mobile-lg:grid-col-3">
-                <div class="usa-footer__primary-container">
-                  <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
-                    <h4 class="usa-footer__primary-link">Developers</h4>
-                    <ul class="usa-list usa-list--unstyled">
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="api-keys">API keys</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="api-guide">API guide</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="api-docs">API docs</a></li>
-                      <li class="usa-footer__secondary-link"><a href="#" data-page="xml-extract">XML extract</a></li>
-                    </ul>
-                  </section>
-                </div>
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Developers</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="api-keys">API keys</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="api-guide">API guide</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="api-docs">API docs</a></li>
+                    <li class="usa-footer__secondary-link"><a href="#" data-page="xml-extract">XML extract</a></li>
+                  </ul>
+                </section>
               </div>
             </div>
           </div>

@@ -73,7 +73,7 @@ class SiteHeader extends HTMLElement {
                   <li class="usa-nav__submenu-item"><a href="learn--grant-policies.html">Grant policies</a></li>
                   <li class="usa-nav__submenu-item"><a href="learn--grant-making-agencies.html">Grant-making agencies</a></li>
                   <li class="usa-nav__submenu-item"><a href="learn--grant-terminology.html">Grant terminology</a></li>
-                  <li class="usa-nav__submenu-item"><a href="learn--fraud.html">Fraud</a></li>
+                  <li class="usa-nav__submenu-item"><a href="learn--fraud.html">Fraud &amp; scams</a></li>
                   <li class="usa-nav__submenu-item"><a href="learn--grant-systems.html">Grant systems</a></li>
                 </ul>
               </li>
