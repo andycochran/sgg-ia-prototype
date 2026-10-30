@@ -133,7 +133,7 @@ class SiteHeader extends HTMLElement {
 
               <!-- 4. SIGN IN (UNAUTHENTICATED) -->
               <li class="usa-nav__primary-item anon-only" id="unauth-nav-item">
-                <a href="" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
+                <a href="#" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
               </li>
 
               <!-- 5. ACCOUNT MENU (AUTHENTICATED) -->
@@ -143,9 +143,9 @@ class SiteHeader extends HTMLElement {
                 </button>
                 <ul id="nav-account" class="usa-nav__submenu">
                   <li class="usa-nav__submenu-item text-bold">
-                    <a href="account--settings.html" class="display-flex flex-align-center">
+                    <a href="account--dashboard.html" class="display-flex flex-align-center">
                       <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-account-circle"></use></svg>
-                      <span>Dashbaord</span>
+                      <span>Dashboard</span>
                     </a>
                   </li>
                   <li class="usa-nav__submenu-item text-bold">
@@ -172,7 +172,7 @@ class SiteHeader extends HTMLElement {
                     </span>
                   </li>
                   <li class="usa-nav__submenu-item">
-                    <a href="" id="sign-out-btn" onclick="setAuthState(false);">Sign out</a>
+                    <a href="#" id="sign-out-btn" onclick="signOut(); return false;">Sign out</a>
                   </li>
                 </ul>
               </li>

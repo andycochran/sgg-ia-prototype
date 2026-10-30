@@ -21,15 +21,71 @@
     <div class="grid-container">
 
       <div class="usa-prose padding-y-6">
-        <h1>Applications</h1>
+        <h1>
+          <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
+          Applications
+        </h1>
 
         <div class="anon-only">
-          <p>This content appears when the user is not signed in.</p>
-          <p>Prompt to <button class="usa-button--unstyled" onclick="setAuthState(true);">sign in</button>.</p>
+          <div class="usa-prose">
+            <p>
+              This is where you'll find a list of all the applications you're working on 
+              or have submitted. 
+            </p>
+          </div>
+          <h2>Sign in to start applying.</h2>
+          <button class="usa-button" onclick="setAuthState(true);">Sign in</button>
         </div>
 
         <div class="auth-only">
-          <p>When the user is authenticated, they'll see a functional list of their applications.</p>
+          <h2>In-progress applications</h2>
+
+          <table class="usa-table usa-table--striped usa-table--borderless margin-bottom-4 width-full">
+            <thead>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill">Application title</th>
+                <th scope="col" class="grid-col-3">Deadline</th>
+                <th scope="col" class="grid-col-3">Organization</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill"><a href="#">Application for rural farming opportunity</a></th>
+                <td class="grid-col-3">December 12, 2026</td>
+                <td class="grid-col-3"><a href="#">My Company</a></td>
+              </tr>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill"><a href="#">Agriculture grant application</a></th>
+                <td class="grid-col-3">December 12, 2026</td>
+                <td class="grid-col-3"><a href="#">My Company</a></td>
+              </tr>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill"><a href="#">Application for rural farming opportunity</a></th>
+                <td class="grid-col-3">December 12, 2026</td>
+                <td class="grid-col-3"><a href="#">My Company</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Submitted applications</h2>
+
+          <table class="usa-table usa-table--striped usa-table--borderless margin-bottom-4 width-full">
+            <thead>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill">Application title</th>
+                <th scope="col" class="grid-col-3">Submmitted</th>
+                <th scope="col" class="grid-col-3">Organization</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="grid-row">
+                <th scope="col" class="grid-col-fill"><a href="#">Farming application</a></th>
+                <td class="grid-col-3">December 12, 2026</td>
+                <td class="grid-col-3"><a href="#">My Company</a></td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
 
