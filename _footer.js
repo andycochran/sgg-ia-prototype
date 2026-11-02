@@ -2,6 +2,7 @@ class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <!-- FOOTER -->
+      <!--
       <footer class="usa-footer usa-footer--big">
         <div class="usa-footer__primary-section padding-y-6">
           <div class="grid-container">
@@ -55,7 +56,9 @@ class SiteFooter extends HTMLElement {
           </div>
         </div>
       </footer>
+      --> 
       <!-- USWDS IDENTIFIER -->
+      <!-- 
       <div class="usa-identifier">
         <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
           <div class="usa-identifier__container">
@@ -75,6 +78,7 @@ class SiteFooter extends HTMLElement {
           </div>
         </nav>
       </div>
+      --> 
     `;
   }
 }

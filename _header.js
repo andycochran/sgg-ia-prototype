@@ -27,6 +27,7 @@ class SiteHeader extends HTMLElement {
       </svg>
 
       <!-- USWDS BANNER -->
+      <!-- 
       <section class="usa-banner" aria-label="Official website of the United States government">
         <div class="usa-banner__header">
           <div class="usa-banner__inner">
@@ -39,6 +40,7 @@ class SiteHeader extends HTMLElement {
           </div>
         </div>
       </section>
+      -->
 
       <!-- HEADER & PRIMARY NAVIGATION -->
       <header class="usa-header usa-header--extended">

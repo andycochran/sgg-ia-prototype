@@ -11,6 +11,11 @@
 }
 .usa-nav__primary-item > .usa-nav__link {
   font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.usa-nav__submenu-item {
+  font-size: 1rem;
 }
 
 /* Hide authenticated elements when anonymous */
