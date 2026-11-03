@@ -20,17 +20,136 @@
   <main id="main-content">
     <div class="grid-container">
 
-      <div class="usa-prose padding-y-6">
-        <h1>Account Dashboard</h1>
+      <div class="padding-y-6">
+        <div class="usa-prose">
 
-        <div class="anon-only">
-          <p>This content appears when the user is not signed in.</p>
-          <p>Prompt to <button class="usa-button--unstyled" onclick="setAuthState(true);">sign in</button>.</p>
-        </div>
+          <h1 class="display-inline-block margin-right-105">Dashboard</h1>
+          <p class="usa-intro text-italic display-inline-block">Welcome, <span class="text-bold">user@email.com</span>.</p>
 
-        <div class="auth-only">
-          <p>When the user is authenticated, they'll see a dashboard of recent activity for their account and organizations.</p>
-        </div>
+          <hr/>
+
+          <h2>Recent account activity</h2>
+
+          <div class="grid-row grid-gap">
+
+            <div class="tablet:grid-col-4">
+              <h3>
+                Applications
+                <button class="usa-button usa-button--unstyled">See all</button>
+              </h3>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div><a href="#" class="text-bold font-sans-md">Application for rural farming opportunity</a></div>
+                  <div class="font-sans-2xs">Due: December 12, 2026</div>
+                  <div class="font-sans-2xs">Organization: My Company</div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div><a href="#" class="text-bold font-sans-md">Agriculture grant application</a></div>
+                  <div class="font-sans-2xs">Due: December 12, 2026</div>
+                  <div class="font-sans-2xs">Organization: My Company</div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-topic"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div><a href="#" class="text-bold font-sans-md">Application for rural farming opportunity</a></div>
+                  <div class="font-sans-2xs">Due: December 12, 2026</div>
+                  <div class="font-sans-2xs">Organization: My Company</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tablet:grid-col-4">
+              <h3>
+                Organizations
+                <button class="usa-button usa-button--unstyled">Manage</button>
+              </h3>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-groups"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div><a href="#" class="text-bold font-sans-md">My Organization</a></div>
+                  <div class="font-sans-2xs">coworker@organization was added on October 27, 2026</div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-groups"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div><a href="#" class="text-bold font-sans-md">My Non-Profit</a></div>
+                  <div class="font-sans-2xs">coworker@nonprofit was removed on October 27, 2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tablet:grid-col-4">
+              <h3>
+                Notifications
+                <button class="usa-button usa-button--unstyled">Manage</button>
+              </h3>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div class="font-sans-2xs">
+                    User shared 
+                    <a href="#" class="text-bold">Agriculture opportunity</a> 
+                    with My Organizaton on October 31, 2026
+                  </div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div class="font-sans-2xs">
+                    User shared 
+                    <a href="#" class="text-bold">Agriculture opportunity</a> 
+                    with My Organizaton on October 31, 2026
+                  </div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div class="font-sans-2xs">
+                    User shared 
+                    <a href="#" class="text-bold">Agriculture opportunity</a> 
+                    with My Organizaton on October 31, 2026
+                  </div>
+                </div>
+              </div>
+              <div class="grid-row margin-bottom-2">
+                <div class="grid-col-auto">
+                  <svg class="usa-icon margin-right-1" aria-hidden="true" focusable="false" role="img"><use href="#icon-notifications"></use></svg>
+                </div>
+                <div class="grid-col-fill">
+                  <div class="font-sans-2xs">
+                    User shared 
+                    <a href="#" class="text-bold">Agriculture opportunity</a> 
+                    with My Organizaton on October 31, 2026
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
       </div>
 
     </div>
