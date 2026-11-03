@@ -21,16 +21,32 @@
     <div class="grid-container">
 
       <div class="usa-prose padding-y-6">
-        <h1>Account Settings</h1>
-
-        <div class="anon-only">
-          <p>This content appears when the user is not signed in.</p>
-          <p>Prompt to <button class="usa-button--unstyled" onclick="setAuthState(true);">sign in</button>.</p>
-        </div>
-
-        <div class="auth-only">
-          <p>When the user is authenticated, they'll see their account settings.</p>
-        </div>
+        <h1>Settings</h1>
+        <h2>Contact information</h2>
+        <p>Your name and email will be visible to others in your organization as you collaborate. You may update your name here at any time, but your email and password are managed by <a href="">login.gov</a>.</p>
+        <form>
+          <label class="usa-label">
+            First name
+            <span class="usa-hint usa-hint--required"> *</span>
+            <p class="text-base-dark margin-top-0">Required to complete your profile.</p>
+            <input class="usa-input" type="text" >
+          </label>
+          <label class="usa-label">
+            Middle name
+            <input class="usa-input" type="text">
+          </label>
+          <label class="usa-label">
+            Last name
+            <span class="usa-hint usa-hint--required"> *</span>
+            <p class="text-base-dark margin-top-0">Required to complete your profile.</p>
+            <input class="usa-input" type="text">
+          </label>
+          <label class="usa-label">
+            Email
+            <input class="usa-input" disabled type="text" value="user@email.com">
+          </label>
+          <button class="usa-button margin-top-4">Save changes</button>
+        </form>
       </div>
 
     </div>
