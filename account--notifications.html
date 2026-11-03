@@ -23,14 +23,44 @@
       <div class="usa-prose padding-y-6">
         <h1>Notifications</h1>
 
-        <div class="anon-only">
-          <p>This content appears when the user is not signed in.</p>
-          <p>Prompt to <button class="usa-button--unstyled" onclick="setAuthState(true);">sign in</button>.</p>
+        <div>
+
+          <h2>Manage your preferences</h2>
+          <p>Choose which notifications you'd like to receive about your activity.</p>
+
+          <div class="usa-checkbox margin-bottom-4">
+            <input class="usa-checkbox__input" id="name--1" type="checkbox" checked />
+            <label class="usa-checkbox__label" for="name--1">
+              <strong>Subscribe to saved opportunities</strong><br />
+              Get email updates about opportunities you have saved.
+            </label>
+          </div>
+
+          <h2>Organization preferences</h2>
+          <p>Choose which notifications you'd like to receive for organizations you're part of.</p>
+
+          <h3>My Organization</h3>
+
+          <div class="usa-checkbox margin-bottom-4">
+            <input class="usa-checkbox__input" id="name--2" type="checkbox" />
+            <label class="usa-checkbox__label" for="name--2">
+              <strong>Subscribe to saved opportunities</strong><br />
+              Get email updates for opportunities saved by you or your organization.
+            </label>
+          </div>
+
+          <h3>My Non-Profit</h3>
+
+          <div class="usa-checkbox margin-bottom-4">
+            <input class="usa-checkbox__input" id="name--3" type="checkbox" checked />
+            <label class="usa-checkbox__label" for="name--3">
+              <strong>Subscribe to saved opportunities</strong><br />
+              Get email updates for opportunities saved by you or your organization.
+            </label>
+          </div>
+
         </div>
 
-        <div class="auth-only">
-          <p>When the user is authenticated, they'll see their notification preferences.</p>
-        </div>
       </div>
 
     </div>
