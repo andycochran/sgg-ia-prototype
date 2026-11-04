@@ -1,5 +1,5 @@
 (function () {
-  // 1. List of file names that require authentication
+  // 1. Pages that require authentication
   const authGatedPages = [
     'profile.html',
     'organizations.html',
@@ -7,24 +7,61 @@
     'saved-searches.html'
   ];
 
-  // Helper to determine if current page requires authentication
   function isCurrentPageAuthGated() {
-    const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+    const currentFile = window.location.pathname.split('/').pop().split(/[?#]/)[0] || 'index.html';
     const hasAttr = document.body && document.body.dataset.authRequired === 'true';
     return hasAttr || authGatedPages.includes(currentFile);
   }
 
-  // 2. Allow URL override (?auth=true / ?auth=false)
+  // 2. URL override support (?auth=true / ?auth=false)
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has('auth')) {
-    localStorage.setItem('sgg_authenticated', urlParams.get('auth') === 'true');
+    const shouldAuth = urlParams.get('auth') === 'true';
+    localStorage.setItem('sgg_authenticated', shouldAuth);
+    if (shouldAuth) {
+      localStorage.setItem('sgg_flash_signin', 'true');
+    }
   }
 
-  // 3. Read auth state
+  // 3. Current state
   const isAuthenticated = localStorage.getItem('sgg_authenticated') === 'true';
 
-  // 4. Gatekeeper: if user lands on an auth-gated page while logged out, send home immediately
-  function enforceGate() {
+  // 4. Flash banner renderer
+  function showAuthAlerts() {
+    const target = document.querySelector('main') || document.body;
+    if (!target) return;
+
+    // Sign-in success
+    if (localStorage.getItem('sgg_flash_signin') === 'true') {
+      localStorage.removeItem('sgg_flash_signin');
+      target.insertAdjacentHTML('afterbegin', `
+        <div class="grid-container margin-top-4 margin-bottom-neg-2">
+          <div class="usa-alert usa-alert--success usa-alert--slim" role="status">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text">You have successfully signed in.</p>
+            </div>
+          </div>
+        </div>
+      `);
+    }
+
+    // Sign-out confirmation
+    if (localStorage.getItem('sgg_flash_signout') === 'true') {
+      localStorage.removeItem('sgg_flash_signout');
+      target.insertAdjacentHTML('afterbegin', `
+        <div class="grid-container margin-top-4 margin-bottom-neg-2">
+          <div class="usa-alert usa-alert--info usa-alert--slim" role="status">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text">You have been signed out.</p>
+            </div>
+          </div>
+        </div>
+      `);
+    }
+  }
+
+  // 5. Auth gatekeeper & UI class initialization
+  function initAuth() {
     if (!isAuthenticated && isCurrentPageAuthGated()) {
       window.location.replace('index.html');
       return;
@@ -34,17 +71,27 @@
       document.body.classList.toggle('is-authenticated', isAuthenticated);
       document.body.classList.toggle('is-anonymous', !isAuthenticated);
     }
+
+    showAuthAlerts();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', enforceGate);
+    document.addEventListener('DOMContentLoaded', initAuth);
   } else {
-    enforceGate();
+    initAuth();
   }
 
-  // 5. Global Sign Out function
+  // 6. Global Auth Controls
+  window.signIn = function () {
+    localStorage.setItem('sgg_authenticated', 'true');
+    localStorage.setItem('sgg_flash_signin', 'true');
+    window.location.reload();
+  };
+
   window.signOut = function () {
     localStorage.setItem('sgg_authenticated', 'false');
+    localStorage.removeItem('sgg_flash_signin');
+    localStorage.setItem('sgg_flash_signout', 'true'); 
 
     if (isCurrentPageAuthGated()) {
       window.location.href = 'index.html';
@@ -53,13 +100,11 @@
     }
   };
 
-  // Backwards compatibility with previous setAuthState(false)
   window.setAuthState = function (state) {
-    if (!state) {
-      window.signOut();
+    if (state) {
+      window.signIn();
     } else {
-      localStorage.setItem('sgg_authenticated', 'true');
-      window.location.reload();
+      window.signOut();
     }
   };
 
