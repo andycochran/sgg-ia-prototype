@@ -135,7 +135,7 @@ class SiteHeader extends HTMLElement {
 
               <!-- 4. SIGN IN (UNAUTHENTICATED) -->
               <li class="usa-nav__primary-item anon-only" id="unauth-nav-item">
-                <a class="usa-link" href="#" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
+                <a href="#" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
               </li>
 
               <!-- 5. ACCOUNT MENU (AUTHENTICATED) -->
