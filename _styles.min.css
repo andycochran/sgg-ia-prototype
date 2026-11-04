@@ -18,6 +18,11 @@
   font-size: 1rem;
 }
 
+/* Main content */
+#main-content {
+  min-height: calc(100vh - 8rem);
+}
+
 /* Hide authenticated elements when anonymous */
 body.is-anonymous .auth-only {
   display: none !important;
