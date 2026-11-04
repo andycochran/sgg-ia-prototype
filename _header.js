@@ -135,7 +135,7 @@ class SiteHeader extends HTMLElement {
 
               <!-- 4. SIGN IN (UNAUTHENTICATED) -->
               <li class="usa-nav__primary-item anon-only" id="unauth-nav-item">
-                <a href="#" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
+                <a class="usa-link" href="#" id="sign-in-btn" class="usa-nav__link" onclick="setAuthState(true);">Sign in</a>
               </li>
 
               <!-- 5. ACCOUNT MENU (AUTHENTICATED) -->
@@ -174,7 +174,7 @@ class SiteHeader extends HTMLElement {
                     </span>
                   </li>
                   <li class="usa-nav__submenu-item">
-                    <a href="#" id="sign-out-btn" onclick="signOut(); return false;">Sign out</a>
+                    <a class="usa-link" href="#" id="sign-out-btn" onclick="signOut(); return false;">Sign out</a>
                   </li>
                 </ul>
               </li>
