@@ -129,7 +129,7 @@ class SiteHeader extends HTMLElement {
                   </li>
                   <li class="usa-nav__submenu-item"><a href="apply--building-your-application.html">Building your application</a></li>
                   <li class="usa-nav__submenu-item"><a href="apply--submission-checklist.html">Submission checklist</a></li>
-                  <li class="usa-nav__submenu-item"><a href="apply--application-troubleshooting.html">Application troubleshooting</a></li>
+                  <li class="usa-nav__submenu-item"><a href="apply--application-common-mistakes.html">Common mistakes to avoid</a></li>
                 </ul>
               </li>
 
